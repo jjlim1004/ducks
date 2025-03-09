@@ -1,0 +1,9 @@
+### 회원가입 테스트
+
+POST http://localhost/auth/signup
+Content-Type: application/json
+
+{
+    "loginId" : "test",
+    "password" : "1234"
+}
