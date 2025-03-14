@@ -26,13 +26,13 @@ public class CommissionReview extends BaseTimeEntity {
     private Commission commission;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    private Users user;
+    private Users users;
 
     @Builder
-    public CommissionReview(byte rating, String comment, Commission commission, Users user) {
+    public CommissionReview(byte rating, String comment, Commission commission, Users users) {
         this.rating = rating;
         this.comment = comment;
         this.commission = commission;
-        this.user = user;
+        this.users = users;
     }
 }

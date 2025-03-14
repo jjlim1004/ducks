@@ -29,13 +29,13 @@ public class CommissionUser extends BaseTimeEntity {
     private Commission commission;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    private Users user;
+    private Users users;
 
     @Builder
-    public CommissionUser(CommissionStatus commissionStatus, LocalDateTime complete_at, Commission commission, Users user) {
+    public CommissionUser(CommissionStatus commissionStatus, LocalDateTime complete_at, Commission commission, Users users) {
         this.commissionStatus = commissionStatus;
         this.complete_at = complete_at;
         this.commission = commission;
-        this.user = user;
+        this.users = users;
     }
 }
