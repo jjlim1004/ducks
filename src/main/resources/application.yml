@@ -7,6 +7,10 @@ spring:
         format_sql: true
         use_sql_comments: true
     open-in-view: true
+  kakao:
+     auth:
+       client: e0db81143185744eb51e733dc1a26896
+       redirect: http://localhost:8081/oauth/login
 server:
   servlet:
     session:

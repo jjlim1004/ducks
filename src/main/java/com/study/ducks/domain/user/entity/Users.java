@@ -1,6 +1,7 @@
 package com.study.ducks.domain.user.entity;
 
 import com.study.ducks.common.BaseTimeEntity;
+import com.study.ducks.domain.user.dto.UserInfoDTO;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
